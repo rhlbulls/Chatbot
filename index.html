@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>ZOZO</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style1.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{
+    margin-bottom:-6px;
+    margin-top:16px;
+    opacity:0.8;
+    cursor:pointer
+    }
+.w3-half img:hover{
+    opacity:1;
+    }
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64" style="position:relative; left:10px;font-family: 'Luckiest Guy', cursive;color:blanchedalmond;font-size:300%;">ZOZO</h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>  
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Why ZOZO?</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Team</a> 
+    <a href="login.php" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" target="_blank">Login / Register</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span style="font-family: 'Luckiest Guy', cursive;color:black;font-size:200%;">ZOZO</span>
+</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Features</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Next Big Thing</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="s.gif" style="width:100%" onclick="onClick(this)" alt="Sophia comments about humans">
+      <img src="4.gif" style="width:100%" onclick="onClick(this)" alt="We are aiming at a bot that teaches you something">
+      <img src="2.png" style="width:100%" onclick="onClick(this)" alt="This isn't Dangerous\n">
+    </div>
+
+    <div class="w3-half">
+      <img src="1.png" style="width:100%" onclick="onClick(this)" alt="an interactive chatbot">
+      <img src="giphy.gif" style="width:100%" onclick="onClick(this)" alt="Bot learns from its mistakes">
+      <img src="3.png" style="width:100%" onclick="onClick(this)" alt="Just like Alexa, Cortana, Siri, Watson..">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Services.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>We are hosting a Chatbot Website that makes possible learning through interaction with machine. </p>
+    <p>We basically focus on productivity of students by making them learn online through interaction with our chatbots
+    and secondly if you wanna have fun....then use our zozo. Just give a try and you will never leave us!!!
+    we are improving each day, Adding more functions...working on more updates,
+    gets better and better each day. This has a lot of things to do! Just you need to do is signup (or) login and getstarted.
+    The next big thing is here join the movement.
+    And help us build the bot by giving suggestions through our contact.
+    </p>
+  </div>
+  
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Developers</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>The best team in the world.</p>
+    <p>
+        We are students of PSG College of Technology, Coimbatore, Tamilnadu, India. We have created this Web page as a Project for our Semester Package Submission and to motivate people to create useful website application. 
+    </p>
+    <p><b>The Creators are</b>:</p>
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="d1.jpg" alt="Rahul" style="width:50% ">
+        <div class="w3-container">
+          <h3>Rahul Sankar</h3>
+          <p class="w3-opacity">CEO</p>
+          <p>I am Savage. Staying and learning at Coimbatore. You can contact me rahulbulls12@gmail.com.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="d2.png" alt="Jane" style="width:65%">
+        <div class="w3-container">
+          <h3>Naman Bhargava</h3>
+          <p class="w3-opacity">COO</p>
+          <p>I am Nomon. No one can beat me in maths. Want to give a try contact me on nomon2702@gmail.com </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>For more queries contact us below.</p>
+    <form action="send.php" method="post">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="message" required>
+      </div>
+      <button type="submit" onclick="r()" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+        <script>
+            function r()
+            {
+                alert("Thanks for your replies!");
+            }
+        </script>
+    </form>  
+  </div>
+
+<!-- End page content -->
+</div>
+
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
